@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Names and Renumber</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sort Names Alphabetically with Automatic Renumbering</h1>
+        <textarea id="namesInput" rows="10" cols="40" placeholder="Paste your list here..."></textarea>
+        <br><br>
+        <button onclick="sortNames('asc')">Sort Ascending</button>
+        <button onclick="sortNames('desc')">Sort Descending</button>
+        <button onclick="copyToClipboard()">Copy Sorted List</button>
+        
+        <h2>Search Sorted List:</h2>
+        <input type="text" id="searchInput" placeholder="Search names..." onkeyup="searchNames()">
+        
+        <h2>Sorted List:</h2>
+        <pre id="sortedNames"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
